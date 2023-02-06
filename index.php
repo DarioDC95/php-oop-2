@@ -1,5 +1,9 @@
 <?php
     include __DIR__. '/database.php';
+
+    echo '<pre>';
+    var_dump($allProducts);
+    echo '</pre>';
 ?>
 
 <!DOCTYPE html>
@@ -27,21 +31,16 @@
     <main>
         <div class="container">
             <div class="row row-cols-3">
-                <div class="col">
-                    ciao
-                </div>
-                <div class="col">
-                    ciao
-                </div>
-                <div class="col">
-                    ciao
-                </div>
-                <div class="col">
-                    ciao
-                </div>
-                <div class="col">
-                    ciao
-                </div>
+                <?php foreach($allProducts as $product) { ?>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="<?php echo $product->image ?>" alt="">
+                        </div>
+                        <div class="card-body">
+                            
+                        </div>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </main>
