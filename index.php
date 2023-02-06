@@ -1,9 +1,5 @@
 <?php
     include __DIR__. '/database.php';
-
-    echo '<pre>';
-    var_dump($allProducts);
-    echo '</pre>';
 ?>
 
 <!DOCTYPE html>
