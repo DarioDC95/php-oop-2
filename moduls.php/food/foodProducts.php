@@ -8,6 +8,10 @@
             $this->weight = $_weight;
             $this->ingredients = $_ingredients;
         }
+
+        public function getIngredients() {
+            return implode(', ', $this->ingredients->items);
+        }
     };
 
     class ingredients
