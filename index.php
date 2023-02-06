@@ -42,8 +42,10 @@
             <div class="row row-cols-3 gy-4">
                 <?php foreach($allProducts as $product) { ?>
                     <div class="col">
-                        <div class="card">
-                            <img class="card-img-top" src="<?php echo $product->image ?>" alt="img product">
+                        <div class="card h-100" style="overflow: hidden">
+                            <div style="width: 100%; height: 500px; overflow: hidden" class="d-flex align-items-center justify-content-center">
+                                <img class="w-100" src="<?php echo $product->image ?>" alt="img product">
+                            </div>
                             <div class="card-body">
                                 <h3><?php echo $product->title ?></h3>
                                 <div class="d-flex align-items-center mb-4">
